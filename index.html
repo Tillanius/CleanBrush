@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>AquaBrush</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">AquaBrush</div>
+  <nav>
+    <a href="#">Shop</a>
+    <a href="#">Technologie</a>
+    <a href="#">Support</a>
+    <span id="cart">🛒 0</span>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Zähneputzen. Neu gedacht.</h1>
+  <p>Wasser · Feedback · Streaks</p>
+</section>
+
+<section class="products">
+
+  <!-- Zahnbürste -->
+  <div class="product">
+    <img id="brush-img" src="images/toothbrush-hero.jpg">
+    <h2>Zahnbürste</h2>
+
+    <select id="design">
+      <option value="hero">Hero Z</option>
+      <option value="dark">Dark Tech</option>
+      <option value="mint">Mint Shard</option>
+      <option value="blue">Blue Shard</option>
+    </select>
+
+    <p class="price">79 €</p>
+    <button onclick="addToCart()">In den Warenkorb</button>
+  </div>
+
+  <!-- Box -->
+  <div class="product">
+    <img src="images/box.jpg">
+    <h2>Pump-Box</h2>
+    <p class="desc">Display · Druckregler · Tracking</p>
+    <p class="price">149 €</p>
+    <button onclick="addToCart()">In den Warenkorb</button>
+  </div>
+
+  <!-- Bundle -->
+  <div class="product featured">
+    <img src="images/bundle.jpg">
+    <h2>Bundle</h2>
+    <p class="desc">Zahnbürste + Box</p>
+    <p class="price">199 €</p>
+    <button onclick="addToCart()">In den Warenkorb</button>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 AquaBrush
+</footer>
+
+<script src="js/shop.js"></script>
+</body>
+</html>
